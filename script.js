@@ -1,11 +1,10 @@
 
 if (!document.getElementById("artCanvas")) {
     console.log("No es la página del editor, script detenido");
-    // Detener ejecución si no es el editor
-    // Puedes usar return si está en función, o envolver todo en:
+
 }
 
-// MEJOR ORGANIZACIÓN: Envuelve tu código en una función init
+
 function initEditor() {
     if (!document.getElementById("artCanvas")) return;
     
@@ -175,6 +174,24 @@ function initEditor() {
     document.getElementById("undo").onclick=undo;
     document.getElementById("redo").onclick=redo;
     
+
     
+
+    const resetZoomBtn = document.getElementById('resetZoom');
+    if (resetZoomBtn) {
+        resetZoomBtn.addEventListener('click', function() {
+
+            artCanvas.style.transform = '';
+            artCanvas.style.transformOrigin = '';
+            artCanvas.style.scale = '';
+
+            gridCanvas.style.transform = '';
+            gridCanvas.style.transformOrigin = '';
+            gridCanvas.style.scale = '';
+
+            drawGrid();
+            status("Vista restaurada");
+        });
+    }
 }
 document.addEventListener("DOMContentLoaded", initEditor);
