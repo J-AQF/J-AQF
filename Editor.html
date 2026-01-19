@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Editor de Pixel‑Art</title>
 <link rel="stylesheet" href="styles-comun.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="Styles-Editor.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
     <div>
         <nav class="navegacion">
             <ul class="navegacion__list">
-                <li class="navegacion__item"><a class="navegacion__link" href="Index.html" >Inicio</a></li>
+                <li class="navegacion__item"><a class="navegacion__link" href="index.html" >Inicio</a></li>
                 <li class="navegacion__item"><a class="navegacion__link" href="Guia.html">Guia</a></li>
 
             </ul>
@@ -70,8 +71,55 @@
     <div class="hint" id="status">Listo</div>
 
     </main>
+    
     <script src="script.js"></script>
-
 </div>
+<button class="zoom-reset" id="resetZoom" title="Resetear zoom">↺</button>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-title">ART-LINE</h3>
+            <p class="footer-text">Pixel art para todos</p>
+            <div class="footer-social">
+                <a href="#" class="footer-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com/javierAQF" rel="noopener" target="_blank" class="footer-icon" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="footer-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4 class="footer-subtitle">Enlaces</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a  href="Guia.html">Guía</a></li>
+                <li><a class="active" href="Editor.html">Editor</a></li>
+                <li><a  href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4 class="footer-subtitle">Recursos</h4>
+            <ul class="footer-links">
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Paletas de color</a></li>
+                <li><a href="#">Herramientas</a></li>
+                <li><a href="#">Comunidad</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2025 ART-LINE - Proyecto universitario</p>
+    </div>
+</footer>
 </body>
 </html>
