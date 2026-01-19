@@ -36,33 +36,40 @@ button:active{
     background-color: var(--color-light);
     color: #000;
 }
-  /* Área de dibujo responsiva con apilamiento correcto */
+
 .canvas-wrap {
-    position: relative;         /* contexto de apilamiento compartido */
+    position: relative;         
     width: 100%;
     max-width: 640px;
-    aspect-ratio: 1 / 1;        /* siempre cuadrado */
-    border: 3px solid var(--color-secondary); /* borde del contenedor, no del canvas */
+    aspect-ratio: 1 / 1;        
+    border: 3px solid var(--color-secondary);
     box-sizing: border-box;
     background: var(--color-extra-light);
     margin: 0 auto;
+    touch-action: manipulation !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
 
+}
+#artCanvas, #gridCanvas {
+    touch-action: pinch-zoom !important;
+    -webkit-tap-highlight-color: transparent !important;
 }
 canvas {
     position: absolute; left: 0; 
     top: 0;
     width: 100%; height: 100%;
- /* tamaño visual fluido */
+
 }
 #artCanvas {
-    z-index: 1;                 /* el arte debajo */
+    z-index: 1;                 
     image-rendering: pixelated;
     touch-action: none;
-    background: transparent;    /* deja ver la rejilla si hiciera falta */
+    background: transparent;    
 }
 #gridCanvas {
-    z-index: 10;                /* rejilla por encima */
-    pointer-events: none;       /* no bloquea interacción */
+    z-index: 10;                
+    pointer-events: none;       
     background: transparent;
 }
 
@@ -77,9 +84,11 @@ canvas {
 
 
 .container { 
+    display: grid !important;
     grid-template-columns:300px 1fr; 
     gap:12px; 
     padding:12px;
+    min-height: calc(100vh - 150px) !important;
 }
 .panel { 
     background:#f7f7f9; 
@@ -99,6 +108,7 @@ canvas {
 @media (max-width: 900px) {
     .container {
         grid-template-columns: 1fr !important; 
+        gap: 15px !important;
     }
     
     .canvas-wrap {
@@ -112,5 +122,34 @@ canvas {
     
     main {
         order: 1; 
+    }
+}
+
+.zoom-reset {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 100 !important;
+    background: var(--color-secondary) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 24px !important;
+    display: none !important; /* Solo visible en móviles */
+    cursor: pointer !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+}
+
+@media (max-width: 900px) {
+    .zoom-reset {
+        display: block !important;
+    }
+    
+    /* Prevenir zoom accidental */
+    .canvas-wrap {
+        max-width: 95vw !important;
+        margin: 0 auto !important;
     }
 }
