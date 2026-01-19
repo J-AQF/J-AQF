@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles-comun.css">
     <link rel="stylesheet" href="Guia-styles.css">
 </head>
@@ -18,8 +20,9 @@
         <div id="nav">
             <nav class="navegacion" aria-label="navegacion">
                 <ul class="navegacion__list">
-                    <li class="navegacion__item"><a class="navegacion__link" href="Index.html">Inicio</a></li> 
+                    <li class="navegacion__item"><a class="navegacion__link" href="Index.html">inicio</a></li> 
                     <li class="navegacion__item"><a class="navegacion__link" href="Editor.html">Editor</a></li>
+                    <li class="navegacion__item"><a href="Contacto.html" class="navegacion__link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,10 +37,10 @@
                     Seccion explicativa basica sobre el Pixel-art.
                 </p>
             </div>
-            <div class="Vide" >
-                <video class="placeholder" src="">Video proximo</video>
+            <div>
+                <img class="Vide" src="Img/gid2.gif"></video>
             </div>
-            <div class="cards-container">
+            <div class="cards-container card__position container">
                 <div class="card">
                     <h2 class="card__Title">
                         Pixel-Art.
@@ -50,14 +53,306 @@
                     <h2 class="card__Title">Surgimiento.</h2>
                     <p class="card__text">Surgió en los videojuegos retro de los años 80 y 90, cuando las limitaciones gráficas obligaban a trabajar con resoluciones bajas y paletas reducidas.</p>
                 </div>
-                <div class="card">
+                <div class="card card--span">
                     <h2 class="card__Title">Actualidad.</h2>
                     <p class="card__text">Hoy en día, se ha convertido en un estilo artístico con identidad propia, muy usado en videojuegos indie, ilustraciones y animaciones.</p>
                 </div>
-                <img src="" alt="">
-                <video src="">Lineas</video>
             </div>
         </section>
+        <section aria-labelledby="Seccion-guia" id="Guia" class="container ">
+            <div>
+                <h2 class="Sub-T">Guia basica al Pixel-Art</h2>
+                <p class="Text">Apartir de aqui; Empezaremos con una introduccion al mundo del Pixel-Art, Sea herramientas, Conceptos, recomendaciones u matrial externo</p>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <h3 class="card__Title">
+                        Herramientas.
+                    </h3>
+                    <p class="card__text">
+                        La primera accion para adentrarse a este mundo es encontrar tu herramienta ideal. Hay un sin de estas, pero algunas pupulares son:
+                    </p>
+                </div>
+            </div>
+
+            <!--Cards-->
+            <div class="cards-container  card__position">
+
+                <div class="card  card--animation">
+                    <h3 class="card__Title">
+                        Aseprite.
+                    </h3>
+                    <p class="card__text">
+                        Popular para crear sprites y animaciones (de pago).
+                    </p>
+                </div>
+                <div class="card   card--animation">
+                    <h3 class="card__Title">Piskel.</h3>
+                    <p class="card__text"> Gratuito y en línea, ideal para principiantes.</p>
+                </div>
+                <div class="card  card--animation">
+                    <h3 class="card__Title">Pixelorama / LibreSprite</h3>
+                    <p class="card__text"> Alternativas libres y multiplataforma.</p>
+                </div>
+                <div class="card card--animation">
+                    <h3 class="card__Title">Krita / Photoshop</h3>
+                    <p class="card__text">Útiles si ya trabajas con ilustración digital</p>
+                </div>
+
+
+                <div class="card card--destacada">
+                    <h3 class="card__Title">
+                        ART-LINE.
+                    </h3>
+                <p class="card__text">
+                    En esta pagina tambien puedes iniciar tu aventura en el mundo del pixel art con nuestro:<a class="navegacion__link"href="Editor.html">Editor.</a>
+                </p>
+                </div>
+            </div>
+            <div aria-labelledby="conceptos">
+                <div>
+                    <h2 class="Sub-T">
+                        Conceptos tecnicos Fundamentales
+                    </h2>
+                    <p class="Text">
+                        Para que una imagen sea considerada "Pixel Art" y no simplemente una imagen de baja resolución, debe existir una intención detrás de la colocación de cada píxel.
+                    </p>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3 class="card__Title">
+                            Resolución y Aspect Ratio
+                        </h3>
+                        <p class="card__text">
+                            En el Pixel Art, trabajamos con lienzos pequeños.
+                        </p>
+                    </div>
+                </div>
+                <div class="cards-container card__position">
+                    <div class="card card--amimation">
+                        <h3 class="card__Title">
+                            16x16 / 32x32:
+                        </h3>
+                        <p class="card__text">
+                            Ideal para iconos o sprites de juegos estilo GameBoy.
+                        </p>
+                    </div>
+                    <div class="card card--amimation">
+                        <h3 class="card__Title">
+                            64x64 / 128x128:
+                        </h3>
+                        <p class="card__text">
+                            Permite un nivel de detalle mucho mayor, similar a la era de SNES o PlayStation 
+                        </p>
+                    </div>
+                    <div class="card card--amimation card--span">
+                        <h3 class="card__Title">
+                            La Regla del "Pixel Perfect.
+                        </h3>
+                            <p class="card__text">
+                            Una línea es "perfecta" cuando no tiene píxeles dobles innecesarios (llamados aggies). El objetivo es que las curvas y diagonales se vean fluidas y no "sucias" o "gruesas" de forma inconsistente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </section>
+
+        <section id="ejemplos" class="seccion-ejemplos">
+            <h2 class="Sub-T">Visuales</h2>
+
+            <div class="contenedor-ejemplo">
+                <h3 class="Sub-T-1">Pixel Art</h3>
+                
+                <p class="Text">Conceptos</p>
+                <div class="cards-container">
+                    <div class="card card--span">
+                        <h3 class="card__Title">
+                            Anti-Aliasing (Suavizado Manual)
+                        </h3>
+                        <p class="card__text">A diferencia del suavizado automático de programas como Photoshop, en Pixel Art se añaden píxeles de colores intermedios en los bordes para suavizar la transición entre el objeto y el fondo, reduciendo el efecto de "escalonado".</p>
+                    </div>
+                </div>
+                <div class="comparacion marco-pixel">
+                    <img src="Img/aa.png" 
+                        alt="Ejemplo de líneas en pixel art"
+                        class="pixel-image img-centrada"
+                        loading="lazy">
+                </div>
+                <p class="leyenda">Líneas pixeladas vs suavizadas</p>
+            </div>
+            <div class="contenedor-ejemplo">
+                <div class="cards-container">
+                    <div class="card card--span">
+                    <h3 class="card__Title">
+                        Dithering (Sombreado por Tramado)
+                    </h3>
+                        <p class="card__text">
+                        Es una técnica para crear degradados y texturas usando un número limitado de colores. Se intercalan píxeles de dos colores diferentes en patrones (como un tablero de ajedrez) para engañar al ojo y que perciba un tercer color o una transición suave.
+                        </p>
+                    </div>
+                </div>
+                <div class="comparacion marco-pixel">
+                    <img src="Img/Dirthering.png" 
+                        alt="Ejemplo de tramado"
+                        class="pixel-image img-centrada"
+                        loading="lazy">
+                </div>
+                <p class="leyenda">Dirthering</p>
+                </div>
+            </div>
+            <div class="contenedor-ejemplo">
+                <div class="cards-container">
+                    <div class="card card--span">
+                    <h3 class="card__Title">
+                        Color Indexing y Paletas Reducidas.
+                    </h3>
+                        <p class="card__text">
+                        El buen Pixel Art se define por la economía de recursos. Usar una paleta limitada (por ejemplo, solo 16 o 32 colores) obliga al artista a ser creativo con el contraste y la saturación.
+                        </p>
+                    </div>
+                </div>
+                <div class="comparacion marco-pixel">
+                    <img src="Img/paletas.png" 
+                        alt="Ejemplo de paletas
+                        class="pixel-image img-centrada"
+                        loading="lazy">
+                </div>
+                <p class="leyenda">Paletas</p>
+                </div>
+            </div>
+
+            <div class="contenedor-ejemplo">
+                <h3 class="Sub-T-1">Sprites Clásicos</h3>
+                <div class="galeria-pixel">
+                    <div class="item-galeria">
+                        <img src="Img/8bit.png" alt="Sprite retro 8-bit" loading="lazy">
+                        <p class="texto-galeria">Sprite</p>
+                    </div>
+                    <div class="item-galeria">
+                        <img src="Img/16bit.png" alt="Sprite 16-bit" loading="lazy">
+                        <p class="texto-galeria">Sprite 8-bit</p>
+                    </div>
+                    <div class="item-galeria">
+                        <img src="Img/pixil.png" alt="pixel-art moderno" loading="lazy">
+                        <p class="texto-galeria">Sprite</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-ejemplo">
+                <h3 class="Sub-T-1">Flujo de trabajo recomendado.</h3>
+                <div class="cards-container">
+                    <div class="card card--span marco">
+                        <h3 class="card__Title">
+                            Boceto (Rough Sketch):
+                        </h3>
+                        <p class="card__text"> Dibuja las formas básicas con un pincel fino sin preocuparte por los píxeles individuales.</p>
+                        <img src="Img/boceto.png" 
+                        alt="Ejemplo de líneas en pixel art"
+                        class="pixel-imagen img-centrada marco"
+                        loading="lazy">
+                    </div>
+                    <div class="card card--span">
+                        <h3 class="card__Title">
+                            Limpiexa (Lineart)
+                        </h3>
+                        <p class="card__text"> Aplica la técnica de pixel perfect para definir los contornos.</p>
+                        <img src="Img/lineart.png" 
+                        alt="lineart"
+                        class="pixel-imagen img-centrada marco"
+                        loading="lazy">
+                    </div>
+                    <div class="card card--span">
+                        <h3 class="card__Title">
+                            Color base.
+                        </h3>
+                        <p class="card__text"> 
+                            Rellena las áreas con colores planos.
+                        </p>
+                        <img src="Img/base.png" 
+                        alt="color base."
+                        class="pixel-imagen img-centrada marco"
+                        loading="lazy">
+                    </div>
+                    <div class="card card--span">
+                        <h3 class="card__Title">
+                            Sombreado y Luces:
+                        </h3>
+                        <p class="card__text"> 
+                            Define la fuente de luz y añade profundidad.
+                        </p>
+                        <img src="Img/luces.png" 
+                        alt="Luces"
+                        class="pixel-imagen img-centrada marco"
+                        loading="lazy">
+                    </div>
+                    <div class="card card--span">
+                        <h3 class="card__Title">
+                            Pulido:
+                        </h3>
+                        <p class="card__text"> 
+                            Aplica dithering o anti-aliasing si el estilo lo requiere.
+                        </p>
+                        <img src="Img/trama.png" 
+                        alt="trama"
+                        class="pixel-imagen img-centrada marco"
+                        loading="lazy">
+                    </div>
+            </div>
+
+        </section>
+
     </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">ART-LINE</h3>
+                <p class="footer-text">Pixel art para todos</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com/javierAQF" rel="noopener" target="_blank" class="footer-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Enlaces</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="active" href="Guia.html">Guía</a></li>
+                    <li><a href="Editor.html">Editor</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Recursos</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Paletas de color</a></li>
+                    <li><a href="#">Herramientas</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 ART-LINE - Proyecto universitario</p>
+        </div>
+    </footer>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
