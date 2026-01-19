@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ART-LINE</title>
+    <link rel="stylesheet" href="styles-comun.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles-contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Artifika&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="banner">
+        <div class="title-P">
+            <h1 class="titulo-P">CONTACTO</h1>
+        </div>
+        <div id="nav">
+            <nav aria-label="Navegación principal" class="navegacion">
+                <ul class="navegacion__list">
+                    <li class="navegacion__item"><a class="navegacion__link" href="index.html">Inicio</a></li>
+                    <li class="navegacion__item"><a class="navegacion__link" href="Guia.html">Guía</a></li>
+                    <li class="navegacion__item"><a class="navegacion__link" href="Editor.html">Editor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container contacto-container">
+        <section class="contacto-section">
+            <div class="contacto-header">
+                <h2 class="Sub-T">¡Contáctanos!</h2>
+                <p class="Text">¿Tienes preguntas, sugerencias o quieres compartir tu arte? Escríbenos.</p>
+            </div>
+
+            <!-- Formulario con validación HTML5 -->
+            <form id="formularioContacto" class="contacto-form" action="https://formspree.io/projects/2917873785547783910/settings" method="90" novalidate>
+                
+                <div class="form-group">
+                    <label for="nombre" class="form-label">
+                        Nombre completo <span class="required">*</span>
+                    </label>
+                    <input type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        class="form-input"
+                        required
+                        minlength="3"
+                        maxlength="50"
+                        placeholder="Tu nombre"
+                        aria-describedby="nombreHelp">
+                    <small id="nombreHelp" class="form-help">
+                        Mínimo 3 caracteres, máximo 50.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        Correo electrónico <span class="required">*</span>
+                    </label>
+                    <input type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input"
+                        required
+                        placeholder="tu@email.com"
+                        aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-help">
+                        Debe ser un email válido (ej: usuario@dominio.com).
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto" class="form-label">
+                        Asunto <span class="required">*</span>
+                    </label>
+                    <select id="asunto" 
+                            name="asunto" 
+                            class="form-select"
+                            required>
+                        <option value="" disabled selected>Selecciona un tema</option>
+                        <option value="consulta">Consulta sobre pixel art</option>
+                        <option value="sugerencia">Sugerencia para la web</option>
+                        <option value="problema">Reportar un problema</option>
+                        <option value="colaboracion">Propuesta de colaboración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje" class="form-label">
+                        Mensaje <span class="required">*</span>
+                    </label>
+                    <textarea id="mensaje" 
+                        name="mensaje" 
+                        class="form-textarea"
+                        required
+                        minlength="10"
+                        maxlength="500"
+                        rows="5"
+                        placeholder="Escribe tu mensaje aquí..."
+                        aria-describedby="mensajeHelp"></textarea>
+                    <small id="mensajeHelp" class="form-help">
+                        Mínimo 10 caracteres, máximo 500. 
+                        <span id="contador">0/500</span>
+                    </small>
+                </div>
+
+                <div class="form-group form-checkbox">
+                    <input type="checkbox" 
+                        id="privacidad" 
+                        name="privacidad"
+                        class="form-checkbox-input"
+                        required>
+                    <label for="privacidad" class="form-checkbox-label">
+                        Acepto la <a href="#" class="privacy-link">política de privacidad</a> 
+                        y el tratamiento de mis datos para responder mi consulta.
+                        <span class="required">*</span>
+                    </label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="form-button submit-button">
+                        Enviar mensaje
+                    </button>
+                    <button type="reset" class="form-button reset-button">
+                        Limpiar formulario
+                    </button>
+                </div>
+
+                <div class="form-note">
+                    <p><strong>Nota:</strong> Los campos marcados con <span class="required">*</span> son obligatorios.</p>
+                    <p>Al enviar, verás los mensajes de error del navegador si hay datos incorrectos.</p>
+                </div>
+            </form>
+
+            <!-- Información de contacto adicional -->
+            <div class="contacto-info">
+                <div class="info-card">
+                    <h3 class="info-title">📧 Email de contacto</h3>
+                    <p class="info-text">contacto@art-line.com</p>
+                </div>
+                <div class="info-card">
+                    <h3 class="info-title">⏰ Tiempo de respuesta</h3>
+                    <p class="info-text">24-48 horas hábiles</p>
+                </div>
+                <div class="info-card">
+                    <h3 class="info-title">💬 Redes sociales</h3>
+                    <p class="info-text">Próximamente en Instagram y Twitter</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">ART-LINE</h3>
+                <p class="footer-text">Pixel art para todos</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com/javierAQF" rel="noopener" target="_blank" class="footer-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Enlaces</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a  href="Guia.html">Guía</a></li>
+                    <li><a href="Editor.html">Editor</a></li>
+                    <li><a class="active" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Recursos</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Paletas de color</a></li>
+                    <li><a href="#">Herramientas</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 ART-LINE - Proyecto universitario</p>
+        </div>
+    </footer>
+
+    <script>
+
+        const mensajeTextarea = document.getElementById('mensaje');
+        const contador = document.getElementById('contador');
+        
+        if (mensajeTextarea && contador) {
+            mensajeTextarea.addEventListener('input', function() {
+                const longitud = this.value.length;
+                contador.textContent = `${longitud}/500`;
+                
+
+                if (longitud > 450) {
+                    contador.style.color = 'var(--color-accent)';
+                } else if (longitud < 10) {
+                    contador.style.color = '#ff6b6b';
+                } else {
+                    contador.style.color = 'var(--color-secondary)';
+                }
+            });
+            
+
+            contador.textContent = `${mensajeTextarea.value.length}/500`;
+        }
+        
+        const formulario = document.getElementById('formularioContacto');
+        if (formulario) {
+            formulario.addEventListener('invalid', function(e) {
+                e.target.classList.add('invalid');
+            }, true);
+            
+            formulario.addEventListener('input', function(e) {
+
+                if (e.target.classList.contains('invalid')) {
+                    e.target.classList.remove('invalid');
+                }
+            });
+        }
+        
+
+        formulario.addEventListener('submit', function(e) {
+            if (!this.checkValidity()) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
