@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Press+Start+2P&display=swap');
+
+/* Variables CSS para mantener consistencia */
+:root {
+    --color-primary: rgb(52, 1, 52);
+    --color-secondary: rgb(209, 142, 10);
+    --color-accent: rgb(255, 196, 20);
+    --color-light: rgb(255, 240, 77);
+    --color-dark: midnightblue;
+    --color-light-1: aliceblue;
+    --color-white: #ffffff;
+    --color-gray-light: #ddd;
+    --color-gray-lighter: #eee;
+    /*fuente*/
+    --font-pixel: 'Press Start 2P', cursive;
+    --font-main: 'Artifika', serif;
+}
+.seccion-ejemplos {
+    padding: 40px 20px;
+    background: linear-gradient(
+        to bottom,
+        rgba(52, 1, 52, 0.1),
+        rgba(20, 20, 94, 0.2)
+    );
+    margin: 40px 0;
+    border-radius: 15px;
+    border: 1px solid rgba(209, 142, 10, 0.3);
+}
+
+.contenedor-ejemplo {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(20, 20, 94, 0.1);
+    border-radius: 10px;
+}
+
+.leyenda {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-gray-lighter);
+    margin-top: 5px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--color-secondary);
+    border-radius: 10px;
+}
+
+
+.galeria-pixel {
+    display: grid;
+    gap: 25px;
+    margin: 30px 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px){
+    .galeria-pixel{
+        grid-template-columns: 1fr;
+    }
+    .footer-list, .footer-subtitle, .footer-title, .footer-text{
+        text-align: center;
+    }
+}
+
+.item-galeria {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.item-galeria:hover {
+    transform: translateY(-10px);
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: var(--color-dark);
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    image-rendering: pixelated;
+}
+
+.texto-galeria {
+    margin-top: 10px;
+    color: var(--color-light);
+    font-family: var(--font-pixel);
+    font-size: 0.8rem;
+}
+
+.comparacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.comparacion-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.marco-pixel {
+    padding: 0;
+}
+.comparacion.marco-pixel img{
+    width: 100vh;
+    box-sizing: border-box;
+    border: 5px dashed var(--color-secondary);
+}
+
+.comparacion-item p {
+    margin-top: 15px;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.comparacion anti-aliased vs  {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+.comparacion img {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+img[loading="lazy"] {
+    transition: opacity 0.5s ease;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+.img-placeholder {
+    background: linear-gradient(90deg, 
+        rgba(52, 1, 52, 0.1) 25%, 
+        rgba(209, 142, 10, 0.1) 50%, 
+        rgba(52, 1, 52, 0.1) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    min-height: 200px;
+    border-radius: 8px;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.pixel-imagen{
+    padding-top: 20px;
+    width: 60%;
+    image-rendering: pixelated;
+}
+
+@media (min-width: 780px) {
+    .pixel-imagen{
+        padding-top: 20px;
+        width: 30%;
+        image-rendering: pixelated;
+    }
+}
+.marco img{
+    border: 2px dashed var(--color-secondary);
+    padding: 0;
+}
